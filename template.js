@@ -1,1 +1,1 @@
-alert("Deneme")
+//alert("Deneme")
