@@ -1,8 +1,105 @@
-/* *{
 
-} */
-/* html{}*/
+
+
+/*
+ Project: One Page
+Author: Habibe Sayrac
+Date:14/June/2023
+Version: v.1
+*/
+/*###################################*/
+/* Root */
+
+
+/*###################################*/
+/* Common Property */
+
+
+*{margin:0;
+padding:0px;
+box-sizing: border-box;
+}
+
+html{
+font-size:20px;
+
+
+}
+
 
 body {  
     font-family: 'Manrope', sans-serif;
+    line-height: 1.2;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+img:hover
+ {
+    opacity: 0.6;
+    box-shadow: 1px 1px 4px 1px red;
+    transition: 3s all ;
+    cursor: pointer;
+
+}
+
+i{
+    font-size:1.5rem;
+}
+.my_clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*my special size*/
+.fSize1{
+    font-size:1rem;/*15*1*/
+    
+}.fSize2{
+    font-size:2rem;/*15*2*/
+    
+}.fSize3{
+    font-size:3rem;/*15*3*/
+    
+}
+.fSize4{
+    font-size:4rem;/*15*4*/
+    
+}
+/*m-line clamp*/
+.line-clamp5{
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.line-clamp8{
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.line-clamp10{
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+header{
+    background-image: url("./img/2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
+    z-index: -1;
+    height: 80vh;
+    padding-top:4rem;
 }
