@@ -28,4 +28,14 @@ git push --force
  git stash list
  git stash pop
  git stash drop stash@{1}
- 
+
+NOT: branch öncesinde git add, commit, push yapalım
+ git branch -M main
+ git branch -v
+ git branch backend
+ git checkout backend
+ git checkout main
+
+git merge frontendgit merge --no-ff frontend
+
+
