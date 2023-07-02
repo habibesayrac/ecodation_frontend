@@ -27,7 +27,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
-    <!-- special CSS -->
+        <!--jquery-->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+        <!-- external CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -58,23 +62,25 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            <i class="fa-regular fa-user text-primary"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </li>
+                   
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <button class="btn btn-primary" onclick="darkModu()"><i class="fa-solid fa-moon"></i></button>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Arama İçin ..." aria-label="Search">
+                    <input id ="tags" class="form-control me-2" type="search" placeholder="Arama İçin ..." aria-label="Search">
                     <button class="btn btn-primary" type="submit">Ara</button> <!--btn btn-outline-success-->
                 </form>
             </div>
@@ -99,14 +105,24 @@
 
     <!-- start main codes -->
     <main id="main_id">
-
-
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam obcaecati ducimus vero velit iste voluptate commodi. Aspernatur necessitatibus dolorum sed, totam sit odio voluptates aperiam optio nesciunt. Nobis, ex tenetur.
+            Qui, soluta error veritatis deserunt quam debitis consectetur ipsum, asperiores ab itaque nam placeat culpa ullam cum quia nihil velit quos blanditiis? Non maxime iste nihil cupiditate suscipit officiis porro.
+            Dignissimos excepturi aliquam qui sed modi perferendis harum blanditiis perspiciatis tenetur ipsum saepe dolor voluptatibus aperiam culpa incidunt obcaecati neque, ullam aspernatur labore animi? Qui quos explicabo neque enim labore!
+            Sint nam obcaecati minima hic voluptates unde quasi libero perspiciatis magnam esse veritatis magni porro, ipsum amet tempora neque delectus quam, maxime facere maiores corrupti. Voluptate culpa tempora eum exercitationem.
+            Enim eum dolorem blanditiis quos odio cumque commodi eligendi nemo, velit pariatur illo et facilis modi illum deleniti temporibus. Harum nihil eos veniam praesentium amet numquam modi quae in odio.
+            Assumenda consequuntur voluptatem esse optio? Eligendi perspiciatis nobis, commodi maiores molestiae deleniti numquam aliquid sed neque recusandae cumque consequatur maxime temporibus ipsum esse facilis accusamus. Perferendis quia impedit illum reprehenderit.
+            Pariatur maxime facere cum consectetur, repellat non quos officia similique ab repellendus incidunt blanditiis quod molestias amet architecto eaque delectus nisi expedita ipsa aperiam. Minus excepturi obcaecati quod beatae alias?
+            Id molestiae commodi hic necessitatibus nemo eaque explicabo in quisquam deserunt tenetur quam eius molestias enim, accusamus unde cupiditate optio natus, fugit quasi cum aperiam consectetur corrupti sed. Ea, nemo!</p>
+        </section>
     </main>
         
     <!-- end main codes -->
 
     <!-- start footer codes -->
-    <footer id="footer_id"></footer>
+    <footer id="footer_id" class="bg-dark">
+        <div class ="text-center p-5" id ="copy_right">2021-<span id="date_id"></span>&copy; Bütün Haklar Saklıdır.</div>
+    </footer>
     <!-- end footer codes -->
 
     <!-- end codes -->
@@ -115,7 +131,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
         </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
