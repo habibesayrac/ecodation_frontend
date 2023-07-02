@@ -112,14 +112,20 @@ i {
 }
 
 .line-clamp8 {
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
 }
 
 .line-clamp10 {
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+
+}.line-clamp20 {
+    -webkit-line-clamp: 20;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
@@ -143,7 +149,7 @@ header {
     height: 80vh;
     padding-top: 4rem;
 }
-/* Header */
+/* Messages */
 #messages {
 margin-top: 3rem;
 margin-bottom: 3rem;
@@ -152,9 +158,21 @@ margin-bottom: 3rem;
 #messages i{
    color:blue;
    font-size:5rem;
-
+}
+/* Parallax */
+#parallax{
+background-color: transparent;
+background-image: url('./img/3.jpg');
+background-size: cover;
+height: 45rem;
+padding: 2rem;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
+#parallax h2,p{
+color:white;
+}
 /*Footer*/
 footer {
     min-height: 10rem;
