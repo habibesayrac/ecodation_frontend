@@ -119,3 +119,28 @@ multiple comment
 // }
 // sumExamplesData();
 
+let userNameAndSurnameMasking=()=>{
+
+    const userNameAndSurname=prompt("Lütfen adınızı ve soyadınızı giriniz");
+
+    const userIndex=userNameAndSurname.indexOf(" ");
+   
+    let username= userNameAndSurname.substring(0, userIndex);
+   
+    for (let i = 1; i < username.length; i++) {
+        username = username.replace(username.charAt(i),"*");
+               
+    }
+    username = username.toUpperCase();
+    console.log(username.toUpperCase());
+
+    let surname= userNameAndSurname.substring(userIndex+1, userNameAndSurname.length()).toUpperCase();
+   
+    for (let i = 3; i <= username.length; i++) {
+        surname = surname.replace(surname.charAt(i),"*");
+               
+    }
+    console.log(surname);
+    console.log(username.concat(" ").concat(surname));
+}
+userNameAndSurnameMasking();
