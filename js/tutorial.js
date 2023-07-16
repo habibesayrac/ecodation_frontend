@@ -119,47 +119,80 @@ multiple comment
 // }
 // sumExamplesData();
 
-let userNameAndSurnameMasking=()=>{
+// let userNameAndSurnameMasking=()=>{
 
-    const userNameAndSurname=prompt("Lütfen adınızı ve soyadınızı giriniz");
+//     const userNameAndSurname=prompt("Lütfen adınızı ve soyadınızı giriniz");
 
-    const userIndex=userNameAndSurname.indexOf(" ");
+//     const userIndex=userNameAndSurname.indexOf(" ");
    
-    let username= userNameAndSurname.substring(0, userIndex);
+//     let username= userNameAndSurname.substring(0, userIndex);
    
-    for (let i = 1; i < username.length; i++) {
-        username = username.replace(username.charAt(i),"*");
+//     for (let i = 1; i < username.length; i++) {
+//         username = username.replace(username.charAt(i),"*");
                
-    }
-    username = username.toUpperCase();
-    console.log(username.toUpperCase());
+//     }
+//     username = username.toUpperCase();
+//     console.log(username.toUpperCase());
 
-    let surname= userNameAndSurname.substring(userIndex+1, userNameAndSurname.length()).toUpperCase();
+//     let surname= userNameAndSurname.substring(userIndex+1, userNameAndSurname.length()).toUpperCase();
    
-    for (let i = 3; i <= username.length; i++) {
-        surname = surname.replace(surname.charAt(i),"*");
+//     for (let i = 3; i <= username.length; i++) {
+//         surname = surname.replace(surname.charAt(i),"*");
                
-    }
-    console.log(surname);
-    console.log(username.concat(" ").concat(surname));
-}
-// userNameAndSurnameMasking();
+//     }
+//     console.log(surname);
+//     console.log(username.concat(" ").concat(surname));
+// }
+// // userNameAndSurnameMasking();
 
-//Monad
-const birinci=()=>{
-    let user = Number(prompt("Lütfen Sayı Giriniz"));
-    return user;
-}
-const ikinci = ()=>{
-    let data = birinci();;
-    console.log(Math.sqrt(data));
-}
-ikinci()
-//setTimeout(),setInterval()
-setTimeout(function(){
-    console.log("setTimeout çalıştı");
-},2000);
+// //Monad
+// const birinci=()=>{
+//     let user = Number(prompt("Lütfen Sayı Giriniz"));
+//     return user;
+// }
+// const ikinci = ()=>{
+//     let data = birinci();;
+//     console.log(Math.sqrt(data));
+// }
+// ikinci()
+// //setTimeout(),setInterval()
+// setTimeout(function(){
+//     console.log("setTimeout çalıştı");
+// },2000);
 
-setInterval(function(){
-    console.log("setInterval çalıştı");
-},1000);
+// setInterval(function(){
+//     console.log("setInterval çalıştı");
+// },1000);
+
+/////////////////////////////////
+// //callbackfunction
+// const birinci=(data)=>{
+//     return Math.pow(data,2);
+   
+// }
+// const ikinci=(callbackFunction)=>{
+//   let user=Number(prompt("Lütfen Sayı Giriniz"));
+//   let data = callbackFunction(user);
+//  console.log(data);
+// }
+// ikinci(birinci);
+
+//promise
+const promTutorials =()=>{
+    //catch bir tane olmak zorunnda
+    let data =new Promise((resolve,reject)=>{
+        let status = 400;
+        if(status===200)
+        resolve("çalıştı");
+        else
+        reject("çalışmadı");
+
+    }).
+    then(
+        ()=>{console.log("olumlu")}
+        ).
+    catch(
+        (err)=>{console.error(err)}
+        );
+}
+promTutorials()
