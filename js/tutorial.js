@@ -199,34 +199,55 @@ multiple comment
 
 //dizi,Iterative,for, for in, for of, forEach, map,filter
 
-let arr=()=>{
-    const numbers =[1,3,5,6,1,9,4,66];
-   return numbers;
-};
-arr()
+// let arr=()=>{
+//     const numbers =[1,3,5,6,1,9,4,66];
+//    return numbers;
+// };
+// arr()
 
-let arrResult=()=>{
-    let data =arr();
-    console.log(data);
+// let arrResult=()=>{
+//     let data =arr();
+//     console.log(data);
 
-    //Iterative For Loop
-    for(let i=0; i<data.length; i++){
-        document.write(data[i] + " ");
-    }
-    document.write("<br/>");
-    //for in
-    for (let temp in data) {
-        document.write(temp +"=>"+data[temp]+"</br>");
-    }
-    document.write("<br/>");
-    //for of
-    for (let temp in data) {
-        document.write(temp +" ");
+//     //Iterative For Loop
+//     for(let i=0; i<data.length; i++){
+//         document.write(data[i] + " ");
+//     }
+//     document.write("<br/>");
+//     //for in
+//     for (let temp in data) {
+//         document.write(temp +"=>"+data[temp]+"</br>");
+//     }
+//     document.write("<br/>");
+//     //for of
+//     for (let temp in data) {
+//         document.write(temp +" ");
   
-    }
+//     }
+//     //forEach
+//     data.forEach(function(value,index,array){
+//         //document.write(index+ "=> "+ value +"<br/>");
+//         document.write(`${index} => ${value} <br/>`);
 
-    //forEach
+//     });
+//diziler push
+// document.write("<br/>");
+// data.push("99");
+// data.unshift(11);
+// data.pop();//sondaki 1 elemanı çıkarır
+// data.shift();//baştaki 1 elemanı çıkarır
+// console.log(data);
 
-    data.forEach();
-}
-arrResult()
+// data.sort();
+// console.log(data);
+
+    //data.reverse();
+// console.log(data);
+//console.log(data.toString().substring(0,2));
+
+
+
+// }
+// arrResult()
+
+
