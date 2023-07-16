@@ -178,21 +178,55 @@ multiple comment
 // ikinci(birinci);
 
 //promise
-const promTutorials =()=>{
-    //catch bir tane olmak zorunnda
-    let data =new Promise((resolve,reject)=>{
-        let status = 400;
-        if(status===200)
-        resolve("çalıştı");
-        else
-        reject("çalışmadı");
+// const promTutorials =()=>{
+//     //catch bir tane olmak zorunnda
+//     let data =new Promise((resolve,reject)=>{
+//         let status = 400;
+//         if(status===200)
+//         resolve("çalıştı");
+//         else
+//         reject("çalışmadı");
 
-    }).
-    then(
-        ()=>{console.log("olumlu")}
-        ).
-    catch(
-        (err)=>{console.error(err)}
-        );
+//     }).
+//     then(
+//         ()=>{console.log("olumlu")}
+//         ).
+//     catch(
+//         (err)=>{console.error(err)}
+//         );
+// }
+// promTutorials()
+
+//dizi,Iterative,for, for in, for of, forEach, map,filter
+
+let arr=()=>{
+    const numbers =[1,3,5,6,1,9,4,66];
+   return numbers;
+};
+arr()
+
+let arrResult=()=>{
+    let data =arr();
+    console.log(data);
+
+    //Iterative For Loop
+    for(let i=0; i<data.length; i++){
+        document.write(data[i] + " ");
+    }
+    document.write("<br/>");
+    //for in
+    for (let temp in data) {
+        document.write(temp +"=>"+data[temp]+"</br>");
+    }
+    document.write("<br/>");
+    //for of
+    for (let temp in data) {
+        document.write(temp +" ");
+  
+    }
+
+    //forEach
+
+    data.forEach();
 }
-promTutorials()
+arrResult()
