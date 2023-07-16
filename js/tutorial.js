@@ -143,4 +143,15 @@ let userNameAndSurnameMasking=()=>{
     console.log(surname);
     console.log(username.concat(" ").concat(surname));
 }
-userNameAndSurnameMasking();
+// userNameAndSurnameMasking();
+
+//Monad
+const birinci=()=>{
+    let user = Number(prompt("Lütfen Sayı Giriniz"));
+    return user;
+}
+const ikinci = ()=>{
+    let data = birinci();;
+    console.log(Math.sqrt(data));
+}
+ikinci()
