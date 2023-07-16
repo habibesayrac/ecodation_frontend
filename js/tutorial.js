@@ -155,3 +155,11 @@ const ikinci = ()=>{
     console.log(Math.sqrt(data));
 }
 ikinci()
+//setTimeout(),setInterval()
+setTimeout(function(){
+    console.log("setTimeout çalıştı");
+},2000);
+
+setInterval(function(){
+    console.log("setInterval çalıştı");
+},1000);
