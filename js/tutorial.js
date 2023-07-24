@@ -250,4 +250,19 @@ multiple comment
 // }
 // arrResult()
 
+//callback- promise örneği
 
+let callbackFunctionComputer=()=>{
+
+    const computerArray =[ ];
+    for (let index = 0; index < 5; index++) {
+        let computerObject =
+        {
+            computerName:`computer ${index+1}`, 
+            price:`${index+1}`*`${Number(100)}`,
+        }
+        computerArray.push(computerObject);     
+    }
+    console.log(computerArray);
+}
+callbackFunctionComputer();
